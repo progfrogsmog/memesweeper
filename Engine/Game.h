@@ -44,15 +44,13 @@ private:
 	void UpdateModel();
 	/********************************/
 	/*  User Functions              */
-	void CreateField( int width,int height,int nMemes );
-	void DestroyField();
 	/********************************/
 private:
 	MainWindow& wnd;
 	Graphics gfx;
 	/********************************/
 	/*  User Variables              */
-	MemeField* pField = nullptr;
+	MemeField field;
 	SelectionMenu menu;
 	State state = State::SelectionMenu;
 	/********************************/
